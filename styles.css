@@ -219,7 +219,7 @@ ul { margin: 0; padding: 0; }
 }
 .shots img:nth-child(2) { transform: translateY(-12px); }
 .note { margin: 10px 0 0; font-size: 12.5px; color: var(--faint); }
-.tl-head h3 a { color: inherit; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.timeline ul a, .tl-head h3 a { color: inherit; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
 .feature-tile {
   display: flex; flex-direction: column; gap: 10px; width: 100%; max-width: 300px;
   padding: 22px; border-radius: 18px;
