@@ -193,15 +193,14 @@ ul { margin: 0; padding: 0; }
 .points li { display: flex; gap: 10px; margin: 8px 0; }
 .points .ic { width: 16px; height: 16px; margin-top: 4px; color: #10b981; }
 .store-btn {
-  display: inline-flex; align-items: center; gap: 8px; margin-top: 18px;
-  padding: 7px 14px 7px 11px; border-radius: 10px;
-  background: #0f172a; color: #fff; text-decoration: none; line-height: 1.1;
-  font-weight: 600; font-size: 15px;
+  display: inline-flex; align-items: center; gap: 7px; margin-top: 18px;
+  padding: 5px 12px 5px 9px; border-radius: 8px;
+  background: var(--surface); color: var(--text); border: 1px solid var(--border);
+  text-decoration: none; line-height: 1.1; font-weight: 600; font-size: 13px;
 }
-.store-btn .ic { width: 22px; height: 22px; }
-.store-btn small { display: block; font-size: 10px; font-weight: 500; opacity: 0.8; }
-.store-btn:hover { background: #1e293b; }
-:root[data-theme="dark"] .store-btn { background: #fff; color: #0f172a; }
+.store-btn .ic { width: 17px; height: 17px; }
+.store-btn small { display: block; font-size: 9.5px; font-weight: 500; color: var(--faint); }
+.store-btn:hover { border-color: var(--accent); color: var(--accent); }
 
 .shots {
   display: flex; gap: 12px; align-items: center; justify-content: center;
@@ -291,3 +290,22 @@ ul { margin: 0; padding: 0; }
 /* Footer */
 .footer { border-top: 1px solid var(--border); padding: 24px 0; font-size: 13px; color: var(--faint); }
 .footer-inner { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; }
+
+/* WedKit iPad + iPhone duo */
+.shots.duo { position: relative; gap: 0; }
+.shots.duo img.ipad { width: 64%; max-width: 280px; min-width: 0; border-radius: 16px; }
+.shots.duo img.iphone { width: 30%; max-width: 132px; min-width: 0; margin-left: -12%; transform: translateY(28px); border-radius: 16px; z-index: 1; }
+
+.tl-head h3 a:hover, .timeline ul a:hover { color: var(--accent-2); }
+
+/* Email reveal + copy */
+.email-wrap { display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap; justify-content: center; }
+.copy-btn {
+  display: inline-flex; align-items: center; gap: 5px; cursor: pointer;
+  font: inherit; font-size: 12.5px; font-weight: 600;
+  padding: 3px 9px; border-radius: 6px;
+  border: 1px solid var(--border); background: var(--surface-2); color: var(--muted);
+}
+.copy-btn:hover { color: var(--accent); border-color: var(--accent); }
+.copy-btn.done { color: #059669; border-color: #10b981; }
+.cta .copy-btn { padding: 11px 16px; border-radius: 10px; font-size: 14px; }
