@@ -21,8 +21,9 @@
     var addr = user + '@' + domain;
     var a = document.createElement('a');
     a.href = 'mailto:' + addr;
-    a.textContent = '✉️ ' + addr;
-    if (el.classList.contains('btn')) a.className = el.className;
+    a.innerHTML = '<svg class="ic"><use href="#i-mail"/></svg>';
+    a.appendChild(document.createTextNode(addr));
+    a.className = el.className;
     el.replaceWith(a);
   }
   ['revealEmail', 'revealEmail2'].forEach(function (id) {
